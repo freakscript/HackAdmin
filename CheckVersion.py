@@ -30,7 +30,7 @@ version = '1.7.44'
 
 def ver_check():
 	print(G + '[+]' + C + ' Checking the HackAdmin for updates....', end='')
-	ver_url = ''
+	ver_url = 'https://github.com/freakscript/HackAdmin/blob/main/CheckVersion.py
 	try:
 		ver_rqst = requests.get(ver_url)
 		ver_sc = ver_rqst.status_code
