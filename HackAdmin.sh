@@ -81,7 +81,7 @@ scan() {
 	web=${1}
 	path="${2}"
 	scan_web=$( curl -s -o /dev/null ${web}/${path} -w %{http_code} )
-	if [[ $scan_web == 200 ]] || [[ $scan_web == 201 ]]; then
+	if [[ $scan_web == found ]] || [[ $scan_web == found ]]; then
 		printf "\n"
 		echo -e "      \t${g}[🥀][${y}+${g}] ${y}${web}/${path} ${y}~> ${g}${scan_web}${n}"
 		printf "\n"
